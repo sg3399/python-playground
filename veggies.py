@@ -26,3 +26,11 @@ with open('vegetables1.csv', 'w') as f:
     writer.writerow(['name','color'])
     for veggie in vegetables:
     	writer.writerow([veggie["name"],veggie["color"]])
+
+
+# addimg length of veg (bonus)
+with open('vegetables2.csv', 'w') as f:
+    writer = csv.writer(f)
+    writer.writerow(['name','color', 'length'])
+    for veggie in vegetables:
+    	writer.writerow([veggie["name"],veggie["color"],len(veggie["name"])])
